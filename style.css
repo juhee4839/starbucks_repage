@@ -243,6 +243,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-right:80px;
+  margin-bottom:30px;
 }
 
 .e-Frequency__images__btn > li {
@@ -253,6 +254,12 @@ nav {
   margin-left:30px;
 }
 
+.e-Frequency__images__btn > li:nth-child(4){
+  width:80px;
+  height:20px;
+  border-radius: 10px;
+}
+
 
 
 .e-Frequency__column__images {
@@ -260,6 +267,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin-top:65px;
 }
 
 
