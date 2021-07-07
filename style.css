@@ -35,8 +35,13 @@ nav {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav__column__logo {
+  margin-right: 640px;
 }
 
 .nav__column__logo img {
@@ -53,16 +58,15 @@ nav {
   align-items: center;
 }
 
-.nav__column__input{
-  position:relative;
+.nav__column__input {
+  position: relative;
 }
 
-.nav__column__input > i{
-  position:absolute;
-  top:10px;
-  right:20px;
-  color:#a58d4d;
-
+.nav__column__input > i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #a58d4d;
 }
 
 .nav__column__input > input {
@@ -96,10 +100,11 @@ nav {
   color: #a58d4d;
   font-size: 21px;
   font-weight: bold;
+  margin-left: 25px;
 }
 
-.nav__bottom__gnb > li{
-  margin:0px 35px;
+.nav__bottom__gnb > li {
+  margin: 10px 65px;
 }
 
 /*intro*/
@@ -126,6 +131,12 @@ nav {
   top: 40px;
   left: 250px;
   font-family: "Noto Sans KR";
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 230px;
 }
 
 .intro__text > h5 {
@@ -168,6 +179,7 @@ nav {
   position: absolute;
   top: 60px;
   right: 380px;
+  margin-right: 100px;
 }
 
 .intro__image__custom > a > img {
@@ -197,7 +209,7 @@ nav {
 .e-Frequency__info {
   color: #398a6c;
   text-align: left;
-  margin-right:110px;
+  margin-right: 110px;
 }
 .e-Frequency__info > h3 {
   font-size: 48px;
@@ -216,25 +228,24 @@ nav {
   color: #398a6c;
 }
 
-.e-Frequency__column__date > input{
-  width:200px;
-  height:50px;
+.e-Frequency__column__date > input {
+  width: 200px;
+  height: 50px;
   background-color: transparent;
-  border:1px solid #398a6c;
+  border: 1px solid #398a6c;
   text-align: center;
-  color:#398a6c;
+  color: #398a6c;
   font-size: 23px;
   font-weight: bold;
 }
 
-.e-Frequency__period{
-  margin-right:40px;
+.e-Frequency__period {
+  margin-right: 40px;
 }
 
-.e-Frequency__date__info{
-  margin-right:40px;
+.e-Frequency__date__info {
+  margin-right: 40px;
 }
-
 
 .e-Frequency__images__btn {
   width: 250px;
@@ -242,8 +253,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right:80px;
-  margin-bottom:30px;
+  margin-right: 80px;
+  margin-bottom: 30px;
 }
 
 .e-Frequency__images__btn > li {
@@ -251,25 +262,22 @@ nav {
   height: 20px;
   border-radius: 50%;
   background-color: #398a6c;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
-.e-Frequency__images__btn > li:nth-child(4){
-  width:80px;
-  height:20px;
+.e-Frequency__images__btn > li:nth-child(4) {
+  width: 80px;
+  height: 20px;
   border-radius: 10px;
 }
-
-
 
 .e-Frequency__column__images {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin-top:65px;
+  margin-top: 65px;
 }
-
 
 .e-Frequency__images_image {
   display: flex;
@@ -280,47 +288,44 @@ nav {
 .e-Frequency__images_image > li > img {
   width: 380px;
   height: 260px;
-  margin-right:15px;
+  margin-right: 15px;
 }
 
-
-.beverages{
-  height:428px;
+.beverages {
+  height: 428px;
   background-color: #0d4e37;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:white;
+  color: white;
 }
 
-.beverages__whole__column{
+.beverages__whole__column {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.beverages__column__new{
+.beverages__column__new {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid rgba(255,255,255,0.3);
-  padding-right:140px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-right: 140px;
   box-sizing: border-box;
 }
 
-.beverages__column__new > h1{
+.beverages__column__new > h1 {
   margin-bottom: 50px;
   font-size: 23px;
 }
-.beverages__new__images{
+.beverages__new__images {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-.beverages__new__images > li{
+.beverages__new__images > li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -328,123 +333,172 @@ nav {
   margin: 0px 20px 5px;
 }
 
-.beverages__new__images > li >h1 {
-  font-size:15px;
+.beverages__new__images > li > h1 {
+  font-size: 15px;
   font-weight: 400;
-
 }
 
-.beverages__new__images >li:nth-child(1) img,
-.beverages__new__images >li:nth-child(3) img{
-  width:93px;
-  height:153px;
-  margin-bottom:50px;
+.beverages__new__images > li:nth-child(1) img,
+.beverages__new__images > li:nth-child(3) img {
+  width: 93px;
+  height: 153px;
+  margin-bottom: 50px;
 }
 
-.beverages__new__images >li:nth-child(2) img{
-  width:120px;
-  height:180px;
-  margin-bottom:20px;
+.beverages__new__images > li:nth-child(2) img {
+  width: 120px;
+  height: 180px;
+  margin-bottom: 20px;
 }
 
-
-.beverage__new__custom__price{
+.beverage__new__custom__price {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.beverages__new__images > li span{
+.beverages__new__images > li span {
   display: block;
-  width:100px;
-  height:1px;
-  background-color: rgba(255,255,255,0.3);
-  margin:3px 0px;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 3px 0px;
 }
 
-.beverage__new__custom__price > div{
-  display:block;
-  width:1px;
-  height:10px;
-  background-color:  rgba(255,255,255,0.3);
+.beverage__new__custom__price > div {
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.beverage__new__custom__price > li{
-  font-size:13px;
-  border-right:1px solid  rgba(255,255,255,0.3);;
-  padding:0px 3px;
+.beverage__new__custom__price > li {
+  font-size: 13px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0px 3px;
   box-sizing: border-box;
 }
 
-.beverage__new__custom__price > li:nth-child(3){
+.beverage__new__custom__price > li:nth-child(3) {
   border-right: none;
 }
 
-.beverages__column__summer{
-  display:flex;
+.beverages__column__summer {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left:140px;
+  margin-left: 140px;
 }
 
-.beverages__column__summer > h1{
-  font-size:23px;
+.beverages__column__summer > h1 {
+  font-size: 23px;
 }
 
-.beverages__summer__images{
+.beverages__summer__images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.beverages__summer__images > li{
+.beverages__summer__images > li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
 
-.beverages__summer__images > li  span{
+.beverages__summer__images > li span {
   display: block;
-  width:100px;
-  height:1px;
-  background-color: rgba(255,255,255,0.3);
-  margin:3px 0px;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 3px 0px;
 }
 
-.beverages__summer__images > li > h1{
-  font-size:15px;
+.beverages__summer__images > li > h1 {
+  font-size: 15px;
   font-weight: 400;
 }
 
-.beverages__summer__images > li:nth-child(3) > h1{
-  margin-top:20px
+.beverages__summer__images > li:nth-child(3) > h1 {
+  margin-top: 20px;
 }
 
-.beverages__summer__images > li:nth-child(4) > h1{
-  margin-top:8px
+.beverages__summer__images > li:nth-child(4) > h1 {
+  margin-top: 8px;
 }
 
-
-.beverages__summer__images > li:first-child > img:nth-child(1){
-  width:200px;
-  height:260px;
+.beverages__summer__images > li:first-child > img:nth-child(1) {
+  width: 200px;
+  height: 260px;
 }
-.beverages__summer__images > li:nth-child(2) img{
-  width:83px;
-  height:182px;
-  margin:60px 0px 16px;
+.beverages__summer__images > li:nth-child(2) img {
+  width: 83px;
+  height: 182px;
+  margin: 60px 0px 16px;
 }
 
 .beverages__summer__images > li:nth-child(3) img {
-  width:150px;
-  height:170px;
-  margin-top:60px;
+  width: 150px;
+  height: 170px;
+  margin-top: 60px;
 }
 
 .beverages__summer__images > li:nth-child(4) img {
-  width:110px;
-  height:185px;
-  margin:60px 0px 5px;
+  width: 110px;
+  height: 185px;
+  margin: 60px 0px 5px;
+}
+
+/*homecafe*/
+
+.homecafe {
+  width: 100%;
+  height: 493px;
+  background-color: #adc0d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homecafe__rg__text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  color: #01333c;
+}
+
+.homecafe__rg__text > h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.homecafe__rg__roast__text {
+  margin-bottom: 22px;
+}
+.homecafe__rg__roast__text > h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.homecafe__rg__text p:nth-child(3) {
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+.homecafe__rg__text p:nth-child(4) {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.homecafe__rg__text button {
+  width: 219px;
+  height: 36px;
+  background-color: transparent;
+  border: 2px solid #01333c;
+  font-weight: bold;
+  font-size: 18px;
 }
