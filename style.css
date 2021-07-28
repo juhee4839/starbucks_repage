@@ -17,15 +17,25 @@ a {
 
 body {
   width: 100%;
-  min-width: 1800px;
   font-family: "roboto", "Noto Sans KR";
+}
+
+section:not(.intro),
+section
+nav,
+footer{
+  padding: 50px 0px;
+  box-sizing: border-box;
 }
 
 /*navi*/
 
+#trigger{
+  display: none;
+}
+
 nav {
-  height: 230px;
-  margin: auto;
+  width:100%;
   background-color: #f5efdf;
   padding: 44px 100px 30px;
   box-sizing: border-box;
@@ -33,36 +43,31 @@ nav {
 
 .nav__column__top {
   width: 100%;
-  height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
-.nav__column__logo {
-  margin-right: 680px;
-}
 
 .nav__column__logo img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 }
 
 .nav__column__login {
-  width: 290px;
-  height: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left:60%;
 }
 
 .nav__column__input {
   position: relative;
 }
 
-.nav__column__input > i {
+.nav__column__input > a > i {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -79,64 +84,97 @@ nav {
 
 .nav__column__login_info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: #a58d4d;
   margin-top: 15px;
 }
 
 .nav__column__login_info > li {
-  margin: 0px 12px;
+  margin: 0px 30%;
 }
 
-.nav__column__bottom {
-  margin-top: 20px;
+.nav__column__login_info > li > a{
+  display:block;
+  width:100%;
 }
 
 .nav__bottom__gnb {
+  width:100%;
+  height:10%;
+  margin:auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #a58d4d;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
-  margin-left: 25px;
 }
 
-.nav__bottom__gnb > li {
-  margin: 10px 65px;
+.nav__bottom__gnb > li{
+  text-transform: uppercase;
+  width:100%;
 }
+
+
+.nav__bottom__gnb a {
+  display:block;
+  line-height:40px;
+  text-align: center;
+  border-right:1px solid rgba(165,141,77,0.2);
+  box-sizing: border-box;
+
+}
+
+.nav__bottom__gnb > li:last-child > a{
+  border-right: 0px;
+}
+
+
+
 
 /*intro*/
 
+.intro{
+  width:100%;
+  height: 500px;
+}
+
+
 .intro__bg_color {
-  height: 430px;
+  height: 100%;
   position: relative;
 }
 
 .intro__bg_color_or {
-  height: 245px;
+  height: 50%;
   background-color: #f5a46d;
 }
 .intro__bg_color_le {
-  height: 185px;
+  height: 50%;
   background-color: #ffde8a;
+}
+
+.intro__column{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top:250px;
 }
 
 .intro__text {
   width: 170px;
   height: 180px;
   color: #19435e;
-  position: absolute;
-  top: 40px;
-  left: 250px;
   font-family: "Noto Sans KR";
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 250px;
+  margin-bottom:220px;
 }
 
 .intro__text > h5 {
@@ -168,6 +206,7 @@ nav {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
+  cursor:pointer;
 }
 
 .intro__images {
@@ -176,10 +215,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 60px;
-  right: 380px;
-  margin-right: 100px;
+  margin-top:60px;
 }
 
 .intro__image__custom > a > img {
@@ -204,7 +240,6 @@ nav {
 }
 /*e-Frequency*/
 .e-Frequency {
-  height: 660px;
   background-color: #f5efdf;
   display: flex;
   flex-direction: column;
@@ -213,8 +248,9 @@ nav {
 }
 
 .e-Frequency__column__text {
+  width:100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .e-Frequency__info {
@@ -251,6 +287,7 @@ nav {
   color: #398a6c;
   font-size: 23px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .e-Frequency__period {
@@ -278,7 +315,8 @@ nav {
   justify-content: center;
   align-items: center;
   margin-right: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
+  cursor: pointer;
 }
 
 .e-Frequency__images__btn > li {
@@ -304,19 +342,21 @@ nav {
 }
 
 .e-Frequency__images_image {
+  width:100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
+
+
 
 .e-Frequency__images_image > li > img {
   width: 380px;
   height: 260px;
-  margin-right: 15px;
+  margin: 0px 35px;
 }
 
 .beverages {
-  height: 460px;
   background-color: #0d4e37;
   display: flex;
   justify-content: center;
@@ -377,6 +417,7 @@ nav {
 }
 
 .beverage__new__custom__price {
+  width:130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,21 +532,15 @@ nav {
 
 .homecafe {
   width: 100%;
-  height: 493px;
   background-color: #adc0d9;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-.homecafe__papua__pic {
-  margin-right: 400px;
 }
 
 .homecafe__papua__pic > img:nth-child(1) {
   width: 230px;
   height: 370px;
-  margin-right: 35px;
 }
 
 .homecafe__papua__pic > img:nth-child(2) {
@@ -552,12 +587,12 @@ nav {
   border: 2px solid #01333c;
   font-weight: bold;
   font-size: 18px;
+  cursor:pointer;
 }
 
 /*near_place*/
 
 .near_place {
-  height: 650px;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
@@ -565,12 +600,18 @@ nav {
   align-items: center;
 }
 
+.near_place_nav{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
 .near_place > div:first-child {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
 }
 
 .near_place__find {
@@ -581,7 +622,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 565px;
   margin-bottom: 30px;
 }
 
@@ -616,28 +656,30 @@ nav {
 }
 
 .near_place > div:nth-child(2) > img:nth-child(1) {
-  width: 420px;
+  width: 30%;
   height: 480px;
   margin-right: 26px;
 }
 
 .near_place > div:nth-child(2) > img:nth-child(2) {
-  width: 800px;
+  width: 60%;
   height: 480px;
 }
 
 .near_place__dots {
+  width:300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 26px;
+  margin-left:10%;
 }
 .near_place__dots > li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #041b13;
-  margin-left: 30px;
+  cursor:pointer;
 }
 
 .near_place__dots > li:nth-child(4) {
@@ -645,11 +687,9 @@ nav {
   height: 20px;
   border-radius: 10px;
   background-color: #041b13;
-  margin-left: 30px;
 }
 
 footer {
-  height: 250px;
   font-size: 10px;
   background-color: #041b13;
   color: white;
@@ -676,6 +716,7 @@ footer {
 
 .footer__column > ul > li {
   margin-bottom: 3px;
+  cursor:pointer;
 }
 
 .footer__column > ul > li:nth-child(1) {
@@ -691,3 +732,279 @@ footer > div:nth-child(2) {
   align-items: center;
   font-size: 12px;
 }
+
+
+@media screen and (min-width:1299px) and (max-width:1599px){
+
+
+  
+  /*section beverages*/
+
+
+
+  .beverages__column__new{
+    border: none;
+  }
+
+  
+  .beverages__whole__column{
+    flex-direction: column;
+  }
+
+
+
+  .beverages__column__summer{
+    margin-top: 150px;
+  }
+
+
+
+}
+
+
+
+@media screen and  (min-width:640px) and (max-width:1298px){
+
+
+  /*nav*/
+  .nav__bottom__gnb{
+    margin:0px;
+  }
+
+  .nav__column__input > input {
+    width:100%;
+  }
+
+  /*beverages*/
+
+  .intro__images > div:first-child{
+    display: none;
+  }
+
+  .intro__images > div:nth-child(2){
+    margin-top:50px;
+    transition:all 0.1s ease-in-out;
+  }
+
+  .intro__images > div:last-child{
+    margin:0px 0px 80px 50px;
+  }
+
+
+  /*intro*/
+
+  .intro__text{
+    align-items: center;
+    margin-left: 100px;
+  }
+
+
+  /*frequency image*/
+
+
+  .e-Frequency__info{
+    text-align: center;
+    margin-right:0px;
+    margin-bottom:50px;
+
+  }
+
+  .e-Frequency__column__text{
+    flex-wrap: wrap;
+  }
+
+  .e-Frequency__images_image{
+    
+    flex-wrap: wrap;
+  }
+  .e-Frequency__images_image > li:last-child > img{
+    display: none;
+  }
+
+  .e-Frequency__images__btn{
+    display: none;
+  }
+
+  
+  /*section beverages*/
+
+
+  .beverages__column__new,
+  .beverages__column__summer{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  .beverages__column__new{
+    border: none;
+  }
+
+  
+  .beverages__whole__column{
+    flex-direction: column;
+  }
+
+
+
+  .beverages__column__summer{
+    margin-top: 150px;
+  }
+
+  
+
+
+
+  /*homecafe*/
+  .homecafe__papua__pic > img:nth-child(2){
+    display: none;
+    
+  }
+
+} 
+
+@media  screen and (max-width:900px) {
+  .e-Frequency__images_image{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .e-Frequency__images_image > li:last-child > img{
+    display: none;
+    margin:0px;
+  }
+
+  .e-Frequency__images__btn{
+    display: none;
+  }
+
+  .e-Frequency__images_image > li {
+    width:90%;
+    padding:0px 20px;
+  }
+
+  .e-Frequency__images_image > li > img {
+    width:100%;
+    margin:0px;
+  }
+
+  .near_place__find{
+    width:80%;
+    height: 50px;
+    border-radius: 10px;
+    transition:all 0.1s ease-in-out;
+  }
+
+  .near_place__image > img:first-child{
+    display: none;
+  }
+
+  .near_place > div:nth-child(2) > img:nth-child(2){
+    width:100%;
+    height: 100%;
+    margin:0px;
+    padding:0px 30px;
+    box-sizing: border-box;
+  }
+
+  .near_place__dots{
+    display:none;
+  }
+
+
+
+}
+
+
+@media screen and (max-width:639px){
+
+
+  /*nav*/
+
+  .nav__bottom__gnb{
+    margin:0px;
+  }
+
+
+  /*beverages*/
+
+  .intro__images > div:first-child{
+    display: none;
+  }
+
+  .intro__images > div:nth-child(2){
+    display: none;
+  }
+
+  .intro__images > div:last-child{
+    margin:0px 0px 80px 50px;
+  }
+
+  .beverages__summer__americano{
+    display: none;
+  }
+
+
+  /*intro*/
+
+  .intro__text{
+    align-items: center;
+    margin-left: 100px;
+  }
+
+
+  /*frequency image*/
+
+  .e-Frequency{
+    height:900px;
+  }
+
+  .e-Frequency__info{
+    text-align: center;
+    margin-right:0px;
+    margin-bottom:50px;
+
+  }
+
+  .e-Frequency__column__text{
+    flex-wrap: wrap;
+  }
+
+  
+ 
+
+  
+  /*section beverages*/
+
+
+  .beverages__column__new,
+  .beverages__column__summer{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  .beverages__column__new{
+    border: none;
+  }
+
+  
+  .beverages__whole__column{
+    flex-direction: column;
+  }
+
+
+
+  .beverages__column__summer{
+    margin-top: 150px;
+  }
+
+
+
+  /*homecafe*/
+  .homecafe__papua__pic > img:nth-child(2){
+    display: none;
+    
+  }
+
+} 
+
